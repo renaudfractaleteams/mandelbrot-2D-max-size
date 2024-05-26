@@ -11,11 +11,15 @@ SIZE_TUILES = 1024
 # Load the CUDA library 
 #https://vitalitylearning.medium.com/using-c-c-and-cuda-functions-as-regular-python-functions-716f01f7ca22
 CUDA_LIB = ctypes.CDLL('./bin/main_cuda.so')  # Update with the correct path
+TEMPALETE_DZI = "./resources/dzi.xml"
 
 PATH_BASE_G = "./web/pan/mandelbrot_G_files"
 PATH_BASE_BW = "./web/pan/mandelbrot_BW_files"
-
-
+"""
+PATH_BASE_G = "./web/pan/mandelbrot_G_test_files"
+PATH_BASE_BW = "./web/pan/mandelbrot_BW_test_files"
+"""
+PATH_BASE = "./web/pan"
 def  Get_Path_Base(path_base:str,lvl:int):
     path = os.path.join(path_base,str(lvl))
     if not os.path.isdir(path):
@@ -114,7 +118,7 @@ def sub_make_tuile_base(no_tuile,lvl,nb_tuiles):
         output_array = (ctypes.c_uint8 * (SIZE_TUILES*SIZE_TUILES))(*output_data)
 
     
-        CUDA_LIB.RUN(no_tuile, NB_TUILES, output_array)
+        CUDA_LIB.RUN(no_tuile, nb_tuiles, output_array)
         data_G = list(output_array)
         data_BW = G2BW(data_G)
         save_file(data_G,path_base_G,x_,y_)
@@ -124,6 +128,24 @@ def make_tuile_base():
     # Define the function prototype
     CUDA_LIB.RUN.argtypes = [ctypes.c_long,ctypes.c_long ,ctypes.POINTER(ctypes.c_uint8)]
     CUDA_LIB.RUN.restype = None
+    
+    dsi_xml = ""
+    with open(TEMPALETE_DZI,"r") as f:
+        dsi_xml = f.readline().replace("size_g",str(NB_TUILES*SIZE_TUILES))
+    
+    name_dzi_BW = PATH_BASE_BW.split("/")[-1].replace("_files","")+".dzi"
+    name_dzi_G = PATH_BASE_G.split("/")[-1].replace("_files","")+".dzi"
+    
+    path_dzi_BW = os.path.join(PATH_BASE,name_dzi_BW)
+    path_dzi_G = os.path.join(PATH_BASE,name_dzi_G)
+    
+    with open(path_dzi_BW,"w") as f:
+        f.write(dsi_xml)
+        
+    with open(path_dzi_G,"w") as f:
+        f.write(dsi_xml)
+        
+        
     nb_tuiles = int(str(NB_TUILES))
     lvl_max = Get_lvl_max()-1
     for lvl in range(-lvl_max,0,1):
