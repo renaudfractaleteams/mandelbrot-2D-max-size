@@ -16,6 +16,7 @@ enum Type_Fractal
     Mandelbrot,
     Julia
 };
+bool DEBUG = false;
 
 // Définition de la structure Complex pour représenter les nombres complexes
 struct Complex
@@ -125,7 +126,7 @@ __host__ __device__ struct ParameterPicture
     {
         double2 pos_po_double = get_x_y_tuile_double_from_no_tuile();
 
-        return make_double2( start.x+ pos_po_double.x + (double)x / ((double)(len_image_per_tuile - 1)) * pas_tuile, start.y+ pos_po_double.y + (double)y / ((double)(len_image_per_tuile - 1)) * pas_tuile);
+        return make_double2(start.x + pos_po_double.x + (double)x / ((double)(len_image_per_tuile - 1)) * pas_tuile, start.y + pos_po_double.y + (double)y / ((double)(len_image_per_tuile - 1)) * pas_tuile);
     }
 
     __host__ __device__ long get_index_long_from_x_y(int x, int y) const
@@ -232,7 +233,7 @@ void C_Picture(ParameterPicture parameter_picture)
     }
 }
 // Fonction pour exécuter le kernel CUDA
-extern "C" cudaError_t RUN(long no_tuile,long nb_tuiles, unsigned char *datas)
+extern "C" cudaError_t RUN(long no_tuile, long nb_tuiles, unsigned char *datas)
 {
 
     std::string json_file = "config.json";
@@ -245,9 +246,9 @@ extern "C" cudaError_t RUN(long no_tuile,long nb_tuiles, unsigned char *datas)
 
     picojson::parse(v, json_data);
     int id_cuda = std::stoi(v.get("id_cuda").to_str());
-    //long no_tuile = std::stol(v.get("no_tuile").to_str());
+    // long no_tuile = std::stol(v.get("no_tuile").to_str());
     long len_image_per_tuile = std::stol(v.get("len_image_per_tuile").to_str());
-    //long nb_tuiles = std::stol(v.get("nb_tuiles").to_str());
+    // long nb_tuiles = std::stol(v.get("nb_tuiles").to_str());
     double2 start = make_double2(std::stod(v.get("start_x").to_str()), std::stod(v.get("start_y").to_str()));
     double size_double = std::stod(v.get("size").to_str());
     double power_value = std::stod(v.get("power_value").to_str());
@@ -285,11 +286,14 @@ extern "C" cudaError_t RUN(long no_tuile,long nb_tuiles, unsigned char *datas)
     }
 
     // Lancer le kernel CUDA
-    std::cout << "Start Kernel_Picture" << std::endl;
+    if (DEBUG)
+        std::cout << "Start Kernel_Picture" << std::endl;
     Kernel_Picture<<<numBlocks, threadsPerBlock>>>(parameter_picture, dev_datas);
-    std::cout << "End Kernel_Picture" << std::endl;
+    if (DEBUG)
+        std::cout << "End Kernel_Picture" << std::endl;
 
-    std::cout << "Start Vérifier si le lancement du kernel a échoué" << std::endl;
+    if (DEBUG)
+        std::cout << "Start Vérifier si le lancement du kernel a échoué" << std::endl;
     // Vérifier si le lancement du kernel a échoué
     cudaStatus = cudaGetLastError();
     if (cudaStatus != cudaSuccess)
@@ -297,9 +301,11 @@ extern "C" cudaError_t RUN(long no_tuile,long nb_tuiles, unsigned char *datas)
         fprintf(stderr, "Kernel_Picture launch failed: %s\n", cudaGetErrorString(cudaStatus));
         goto Error;
     }
-    std::cout << "End  Vérifier si le lancement du kernel a échoué" << std::endl;
+    if (DEBUG)
+        std::cout << "End  Vérifier si le lancement du kernel a échoué" << std::endl;
 
-    std::cout << "Start Attendre la fin de l'exécution du kernel" << std::endl;
+    if (DEBUG)
+        std::cout << "Start Attendre la fin de l'exécution du kernel" << std::endl;
     // Attendre la fin de l'exécution du kernel
     cudaStatus = cudaDeviceSynchronize();
     if (cudaStatus != cudaSuccess)
@@ -307,27 +313,34 @@ extern "C" cudaError_t RUN(long no_tuile,long nb_tuiles, unsigned char *datas)
         fprintf(stderr, "cudaDeviceSynchronize returned error code %d after launching Kernel_Picture!\n", cudaStatus);
         goto Error;
     }
-    std::cout << "End Attendre la fin de l'exécution du kernel" << std::endl;
+    if (DEBUG)
+        std::cout << "End Attendre la fin de l'exécution du kernel" << std::endl;
 
     // Copier les données du GPU vers la mémoire de l'hôte
-    std::cout << "Start Copier les données du GPU vers la mémoire de l'hôte" << std::endl;
+    if (DEBUG)
+        std::cout << "Start Copier les données du GPU vers la mémoire de l'hôte" << std::endl;
     cudaStatus = cudaMemcpy(datas, dev_datas, size, cudaMemcpyDeviceToHost);
     if (cudaStatus != cudaSuccess)
     {
         fprintf(stderr, "cudaMemcpy failed!");
         goto Error;
     }
-    std::cout << "End Copier les données du GPU vers la mémoire de l'hôte" << std::endl;
+    if (DEBUG)
+        std::cout << "End Copier les données du GPU vers la mémoire de l'hôte" << std::endl;
 
     // Libérer la mémoire allouée sur le GPU
-    std::cout << "Start Libérer la mémoire allouée sur le GPU" << std::endl;
+    if (DEBUG)
+        std::cout << "Start Libérer la mémoire allouée sur le GPU" << std::endl;
     cudaFree(dev_datas);
-    std::cout << "End Libérer la mémoire allouée sur le GPU" << std::endl;
+    if (DEBUG)
+        std::cout << "End Libérer la mémoire allouée sur le GPU" << std::endl;
 
     // Réinitialiser le GPU
-    std::cout << "Start Réinitialiser le GPU" << std::endl;
+    if (DEBUG)
+        std::cout << "Start Réinitialiser le GPU" << std::endl;
     cudaStatus = cudaDeviceReset();
-    std::cout << "End Réinitialiser le GPU" << std::endl;
+    if (DEBUG)
+        std::cout << "End Réinitialiser le GPU" << std::endl;
     if (cudaStatus != cudaSuccess)
     {
         fprintf(stderr, "cudaDeviceReset failed!");
@@ -376,6 +389,6 @@ int main()
     cudaError_t cudaStatus;
 
     std::cout << "début du RUN Cuda" << std::endl;
-    cudaStatus = RUN(0,2,datas_G);
+    cudaStatus = RUN(0, 2, datas_G);
     std::cout << "fin du RUN Cuda" << std::endl;
 }
