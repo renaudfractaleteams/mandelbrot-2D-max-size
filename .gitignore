@@ -31,3 +31,4 @@
 *.out
 *.app
 /web
+/CPU_Only/web/pan
