@@ -30,5 +30,5 @@
 *.exe
 *.out
 *.app
-/web
+/GPU_CPU/web/pan
 /CPU_Only/web/pan
