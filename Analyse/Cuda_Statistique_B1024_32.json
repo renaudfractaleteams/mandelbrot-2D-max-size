@@ -1,0 +1,268 @@
+[
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 15,
+        "duration": 1860.6649301052094,
+        "type": "G and BW",
+        "nb_tuiles": 1024
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 14,
+        "duration": 35.27330279350281,
+        "type": "BW",
+        "nb_tuiles": 256
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 14,
+        "duration": 34.73688793182373,
+        "type": "G",
+        "nb_tuiles": 256
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 13,
+        "duration": 10.867716789245605,
+        "type": "BW",
+        "nb_tuiles": 64
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 13,
+        "duration": 10.179710149765015,
+        "type": "G",
+        "nb_tuiles": 64
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 12,
+        "duration": 3.2132339477539062,
+        "type": "BW",
+        "nb_tuiles": 16
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 12,
+        "duration": 2.796241044998169,
+        "type": "G",
+        "nb_tuiles": 16
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 11,
+        "duration": 1.0373330116271973,
+        "type": "BW",
+        "nb_tuiles": 4
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 11,
+        "duration": 0.758004903793335,
+        "type": "G",
+        "nb_tuiles": 4
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 10,
+        "duration": 0.26849842071533203,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 10,
+        "duration": 0.2226390838623047,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 9,
+        "duration": 0.05232572555541992,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 9,
+        "duration": 0.04550433158874512,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 9,
+        "duration": 0.00481414794921875,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 8,
+        "duration": 0.05027508735656738,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 8,
+        "duration": 0.029271364212036133,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 8,
+        "duration": 0.004878997802734375,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 7,
+        "duration": 0.021576881408691406,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 7,
+        "duration": 0.023014068603515625,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 7,
+        "duration": 0.0050432682037353516,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 6,
+        "duration": 0.02182459831237793,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 6,
+        "duration": 0.021929502487182617,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 6,
+        "duration": 0.005126476287841797,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 5,
+        "duration": 0.037407875061035156,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 5,
+        "duration": 0.16908955574035645,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 5,
+        "duration": 0.0585939884185791,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 4,
+        "duration": 0.308077335357666,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 4,
+        "duration": 0.035559654235839844,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 4,
+        "duration": 0.00484156608581543,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 3,
+        "duration": 0.025832414627075195,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 3,
+        "duration": 0.019704580307006836,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 3,
+        "duration": 0.0050048828125,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 2,
+        "duration": 0.031067848205566406,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 2,
+        "duration": 0.022159337997436523,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 2,
+        "duration": 0.0050754547119140625,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 1,
+        "duration": 0.020069360733032227,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 1,
+        "duration": 0.02063131332397461,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 1,
+        "duration": 0.004888772964477539,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    }
+]

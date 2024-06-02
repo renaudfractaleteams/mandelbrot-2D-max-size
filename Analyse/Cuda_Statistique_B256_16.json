@@ -1,0 +1,254 @@
+[
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 14,
+        "duration": 473.032114982605,
+        "type": "G and BW",
+        "nb_tuiles": 256
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 13,
+        "duration": 9.707994937896729,
+        "type": "BW",
+        "nb_tuiles": 64
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 13,
+        "duration": 10.200529336929321,
+        "type": "G",
+        "nb_tuiles": 64
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 12,
+        "duration": 3.00315523147583,
+        "type": "BW",
+        "nb_tuiles": 16
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 12,
+        "duration": 3.7832438945770264,
+        "type": "G",
+        "nb_tuiles": 16
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 11,
+        "duration": 0.8454108238220215,
+        "type": "BW",
+        "nb_tuiles": 4
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 11,
+        "duration": 0.8023827075958252,
+        "type": "G",
+        "nb_tuiles": 4
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 10,
+        "duration": 0.2710237503051758,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 10,
+        "duration": 0.22442293167114258,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 9,
+        "duration": 0.04955267906188965,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 9,
+        "duration": 0.04604339599609375,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 9,
+        "duration": 0.003984928131103516,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 8,
+        "duration": 0.02824568748474121,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 8,
+        "duration": 0.0265045166015625,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 8,
+        "duration": 0.0037970542907714844,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 7,
+        "duration": 0.022072315216064453,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 7,
+        "duration": 0.020061016082763672,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 7,
+        "duration": 0.004735708236694336,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 6,
+        "duration": 0.01946091651916504,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 6,
+        "duration": 0.025090932846069336,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 6,
+        "duration": 0.0059239864349365234,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 5,
+        "duration": 0.019811630249023438,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 5,
+        "duration": 0.022132158279418945,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 5,
+        "duration": 0.005445241928100586,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 4,
+        "duration": 0.02491307258605957,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 4,
+        "duration": 0.02168869972229004,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 4,
+        "duration": 0.005981922149658203,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 3,
+        "duration": 0.021428346633911133,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 3,
+        "duration": 0.024620771408081055,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 3,
+        "duration": 0.007302522659301758,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 2,
+        "duration": 0.024039268493652344,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 2,
+        "duration": 0.024890422821044922,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 2,
+        "duration": 0.006418466567993164,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 1,
+        "duration": 0.023728132247924805,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 1,
+        "duration": 0.021475791931152344,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_by_engine",
+        "lvl": 1,
+        "duration": 0.004211902618408203,
+        "type": "G and BW",
+        "nb_tuiles": 1
+    }
+]
