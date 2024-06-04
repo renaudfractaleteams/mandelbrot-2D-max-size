@@ -20,7 +20,7 @@ def Save_Statistique(Statistique:list):
 
    
 
-def make_tuiles(engine):
+def make_tuiles(engine, UseCoef2=True,UseEngine=True):
     Statistique  = list()
     # Define the function prototype
     engine.argtypes = [ctypes.c_long,ctypes.c_long ,ctypes.POINTER(ctypes.c_uint8)]
@@ -76,7 +76,7 @@ def make_tuiles(engine):
             "nb_tuiles" : nb_tuiles*nb_tuiles
             })
             Save_Statistique(Statistique)  
-        elif factor_nb_tuiles==0.5:
+        elif factor_nb_tuiles==0.5 and UseCoef2:
             print("lvl = "+str(abs(lvl)) + " ==> no_tuile  = 2" )
             start = time.time()
             make_tuile_coef_2(abs(lvl)+1,abs(lvl),nb_tuiles,constantes.PATH_BASE_BW,constantes)
@@ -102,11 +102,21 @@ def make_tuiles(engine):
             })
             Save_Statistique(Statistique)
             
-        else : 
+        else :
+            if not UseEngine:
+                continue
             start_G = time.time()
             for no_tuile in range(nb_tuiles*nb_tuiles):
                 start = time.time()
                 make_tuile_by_engine(engine=engine,no_tuile=no_tuile,lvl=abs(lvl),nb_tuiles=nb_tuiles,constantes=constantes)
+                duration = time.time()-start
+                Statistique.append( {
+                "function" : "make_tuile_by_engine",
+                "lvl" : abs(lvl),
+                "duration" : duration,
+                "type" : "G and BW",
+                "nb_tuiles" : 1            
+                })
                 print("lvl = "+str(abs(lvl)) + " "+ "==> time "+ str(round(time.time()-start,3))  +"==> no_tuile  = "+str(no_tuile)+"/" +str(nb_tuiles*nb_tuiles) +"==> "+str(int(no_tuile/float(nb_tuiles*nb_tuiles)*100)))
             duration = time.time()-start_G
             Statistique.append( {
@@ -121,4 +131,4 @@ def make_tuiles(engine):
             
 
 #make_sub_tuile_base()
-make_tuiles(constantesg.CUDA_LIB.RUN_CPP)
+make_tuiles(constantesg.CUDA_LIB.RUN_CUDA,UseCoef2=False)

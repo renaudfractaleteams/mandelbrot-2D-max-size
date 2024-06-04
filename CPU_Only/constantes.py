@@ -1,7 +1,7 @@
 
 
 BOOL_INVERSE = True
-NB_TUILES = 16
+NB_TUILES = 32
 
 
 """

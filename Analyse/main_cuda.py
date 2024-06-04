@@ -4,7 +4,7 @@ from numpy import true_divide
 
 
 cuda_files = ["Cuda_Statistique_B64_8.json", "Cuda_Statistique_B256_16.json", "Cuda_Statistique_B1024_32.json"]
-
+cuda_files = ["Statistique_CUDA.json",]
 csv = list()
 bool_titre = True
 
