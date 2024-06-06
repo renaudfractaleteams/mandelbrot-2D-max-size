@@ -1,0 +1,9 @@
+{
+    "id_cuda": 0,
+    "len_image_per_tuile": 1024,
+    "start_x": -2.0,
+    "start_y": -1.4,
+    "size": 2.8,
+    "power_value": 2.0,
+    "iter_max": 4097
+}
