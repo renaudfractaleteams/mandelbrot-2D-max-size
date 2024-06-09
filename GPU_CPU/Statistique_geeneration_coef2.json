@@ -1,0 +1,254 @@
+[
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 18,
+        "duration": 9237.728102684021,
+        "type": "BW",
+        "nb_tuiles": 65536
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 18,
+        "duration": 9088.377182245255,
+        "type": "G",
+        "nb_tuiles": 65536
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 17,
+        "duration": 2248.7369656562805,
+        "type": "BW",
+        "nb_tuiles": 16384
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 17,
+        "duration": 2079.1159274578094,
+        "type": "G",
+        "nb_tuiles": 16384
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 16,
+        "duration": 538.7647235393524,
+        "type": "BW",
+        "nb_tuiles": 4096
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 16,
+        "duration": 544.5175557136536,
+        "type": "G",
+        "nb_tuiles": 4096
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 15,
+        "duration": 149.7192680835724,
+        "type": "BW",
+        "nb_tuiles": 1024
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 15,
+        "duration": 142.755380153656,
+        "type": "G",
+        "nb_tuiles": 1024
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 14,
+        "duration": 40.82207894325256,
+        "type": "BW",
+        "nb_tuiles": 256
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 14,
+        "duration": 38.56712579727173,
+        "type": "G",
+        "nb_tuiles": 256
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 13,
+        "duration": 11.875080108642578,
+        "type": "BW",
+        "nb_tuiles": 64
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 13,
+        "duration": 10.637129306793213,
+        "type": "G",
+        "nb_tuiles": 64
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 12,
+        "duration": 3.4852938652038574,
+        "type": "BW",
+        "nb_tuiles": 16
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 12,
+        "duration": 2.936145544052124,
+        "type": "G",
+        "nb_tuiles": 16
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 11,
+        "duration": 1.014519214630127,
+        "type": "BW",
+        "nb_tuiles": 4
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 11,
+        "duration": 0.8552737236022949,
+        "type": "G",
+        "nb_tuiles": 4
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 10,
+        "duration": 0.2958524227142334,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_2",
+        "lvl": 10,
+        "duration": 0.23527789115905762,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 9,
+        "duration": 0.06078696250915527,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 9,
+        "duration": 0.05064845085144043,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 8,
+        "duration": 0.04394054412841797,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 8,
+        "duration": 0.03593921661376953,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 7,
+        "duration": 0.028225421905517578,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 7,
+        "duration": 0.03006434440612793,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 6,
+        "duration": 0.026351451873779297,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 6,
+        "duration": 0.023818254470825195,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 5,
+        "duration": 0.029625415802001953,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 5,
+        "duration": 0.020279884338378906,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 4,
+        "duration": 0.02786087989807129,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 4,
+        "duration": 0.020755290985107422,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 3,
+        "duration": 0.030939817428588867,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 3,
+        "duration": 0.02159881591796875,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 2,
+        "duration": 0.029224395751953125,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 2,
+        "duration": 0.02353358268737793,
+        "type": "G",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 1,
+        "duration": 0.03080296516418457,
+        "type": "BW",
+        "nb_tuiles": 1
+    },
+    {
+        "function": "make_tuile_coef_1",
+        "lvl": 1,
+        "duration": 0.022466659545898438,
+        "type": "G",
+        "nb_tuiles": 1
+    }
+]
